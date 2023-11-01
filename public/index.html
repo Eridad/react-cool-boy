@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'main': '#048750',
+            }
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+            .content-auto {
+              content-visibility: auto;
+            }
+            :root{
+              --main:#048750;
+              --shadow:#E9F3EF;
+              --lighter:#CDE7DC;
+            }
+            html{
+              background-color: #F5FFFB;
+              color:#000D08;
+              font-family: 'Poppins', sans-serif;
+              font-size: 16px;
+            }
+  
+            *{
+              transition: all 0.3s ease-in-out;
+            }
+  
+            * i{
+              line-height: 8px;
+            }
+            .active-now {
+              background-color: rgba(255, 255, 255, 0.185);
+              border-radius: 0 50px 50px 0;
+              border-left-width: 2px;
+              border-left-color: white;
+              
+            /* @apply bg-white border-l-2 rounded-r-full border-l-white bg-opacity-20"; */
+            }
+            .nav-button:hover{
+              background-color: rgba(255, 255, 255, 0.185);
+              border-radius: 0 50px 50px 0;
+              border-left-width: 2px;
+              border-left-color: white;
+            }
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
